@@ -1,0 +1,20 @@
+.counts {
+    background: linear-gradient(90deg, rgba(88, 70, 249, 0.5) 0%, rgba(123, 39, 216, 0.5) 100%), url("https://res.cloudinary.com/dcpks831z/image/upload/v1615717280/RoomAssets/counts-bg_qbbsbj.png") center center no-repeat;
+    padding: 80px 10% 60px 10%;
+  }
+  
+  .counts .counters span {
+    font-size: 48px;
+    display: block;
+    color: #fff;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .counts .counters p {
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  

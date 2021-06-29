@@ -1,0 +1,99 @@
+.FlatContainer{
+    width: 100%;
+    display: flex;
+    padding: 100px 10% 30px 10%;
+}
+.flatImage{
+    width: 40%;
+    background-image: url('https://res.cloudinary.com/dcpks831z/image/upload/v1615717282/RoomAssets/flatbg_vnvekx.jpg');
+    background-size: cover;
+}
+.flatdetail{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+.flatCard{
+    width: 90%;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 4px;
+    background: linear-gradient(to bottom left, #c6c6cf 0%, #ffffff 100%);
+    position: relative;
+}
+
+.flatCard table{
+    width: 100%;
+    display: table;
+}
+.flatCard table tr {
+  vertical-align: baseline;
+}
+.flatCard table tr td:nth-child(1) {
+    text-align: center;
+  }
+.flatCard table tr td:nth-child(even) {
+    font-weight: bold;
+  }
+.cardverified{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 4px 16px;
+    background-color: rgb(69, 148, 69);
+    color: whitesmoke;
+    border-radius: 99px;
+}
+
+.cardRequired{
+    color: indigo;
+    padding: 10px;
+    font-size: 22px;
+}
+
+.flatdetail h4{
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+}
+
+.addRoom {
+    background: linear-gradient(to left,#b588bb  0%, #c59099 100%);
+    position: absolute;
+    top:100px;
+    right: 10px;
+    z-index: 100;
+    color: whitesmoke;
+    padding: 4px 16px;
+    border-radius: 99px;
+}
+
+@media (max-width: 700px){
+    .FlatContainer{
+        padding: 70px 3%;
+    }
+    .roomImage{
+        width: 5%;
+    }
+    .flatdetail{
+        width: 95%;
+    }
+    .addRoom{
+        position: unset !important;
+        width: 50%;
+        margin: 0px 25%;
+    }
+    .cardverified{
+        top: -10px;
+        right: -10px;
+        padding: 6px 10px;
+    }
+    .cardverified span{
+        display: none;
+    }
+    .cardRequired{
+        font-size: 12px;
+    }
+}

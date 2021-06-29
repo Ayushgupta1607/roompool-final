@@ -1,0 +1,202 @@
+.Header-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    z-index: 150;
+    position: fixed;
+    top: 0;
+    background-color: #f9f8ff;
+}
+
+
+
+.Header-container > img {
+    width: 230px;
+}
+.Header-container > a {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+.Header-container > a > img{
+    height: 40px;
+    padding: 4px;
+}
+
+
+.Header-container > ul {
+    width: 50%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+.Header-container > ul  > li {
+    margin: 0px 15px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.Register{
+  color: #f7f4f3 !important;
+  padding: 2px 16px;
+  border-radius: 6px;
+  border: 0.2px solid grey;
+}
+
+
+.none{
+    display: none;
+}
+
+.row {
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 -16px;
+  }
+
+
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+  
+  .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 6px 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
+
+  
+  hr {
+    border: 1px solid lightgrey;
+  }
+  
+  
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+  @media (max-width: 800px) {
+    .col-25 {
+      margin-bottom: 20px;
+    }
+  }
+
+  .SearchUser{
+    width: 40%;
+    margin: 2% 30%;
+    background-color: #ab1b1d;
+    border-radius: 4px;
+  }
+
+  .SearchUser form {
+    padding: 3% 5%;
+    color: white;
+  }
+  .Menu-icon{
+    display: none;
+  }
+
+ 
+@keyframes Dropdown{
+  0%  {
+    width: 0;
+  }
+  100%{
+    width: 100%;
+  }
+}
+
+.Menu{
+  display: none;
+  animation: Dropdown 1s;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: sticky;
+  top: 50px;
+  height: 100vh;
+  background: linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%), url("https://res.cloudinary.com/dcpks831z/image/upload/v1615717281/RoomAssets/hero-bg_a1gudc.jpg") center center no-repeat;
+  background-size: cover;
+  color: whitesmoke;
+}
+
+.Menu > ul {
+  list-style: none;
+  font-size: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  color: whitesmoke !important;
+}
+.Menu-icon{
+  display: none;
+}
+
+.Menu > ul > li{
+  margin: 10px 0px;
+  text-align: center;
+}
+.Menu > ul > li > a{
+ color: whitesmoke;
+}
+
+@media (max-width : 1024px){
+    .Header-container > ul{
+        display: none;
+    }
+    .Header-container{
+        padding: 2% 4%;
+    }
+    .Header-container img {
+        width: 120px;
+        height: 30px;
+    }
+    .Header-container > a {
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+  }
+    .Header-container > a > img{
+      height: unset;
+      width: 35px;
+  }
+ 
+    .Menu-icon{
+        list-style: none;
+        font-size: 25px;
+        display: block;
+    }
+    .Menu-none{
+      display: none;
+    }
+    .Menu{
+      display: flex;
+      width: 100%;
+      z-index: 12;
+    }
+ 
+    .formback{
+      margin: 4% 17%;
+    }
+
+   
+}

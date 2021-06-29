@@ -1,0 +1,135 @@
+.FlatContainer{
+    width: 100%;
+    display: flex;
+    padding: 100px 10% 30px 10%;
+    min-height: 90vh;
+}
+.roomImage{
+    width: 40%;
+    background-image: url('https://res.cloudinary.com/dcpks831z/image/upload/v1615717282/RoomAssets/Roommateimage_wisfs4.jpg');
+    background-size: cover;
+}
+.flatdetail{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+.roomCard{
+    width: 90%;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 4px;
+    background: linear-gradient(to bottom left, #c6c6cf 0%, #ffffff 100%);
+    position: relative;
+}
+
+.roomCard table{
+    width: 80%;
+    display: table;
+    font-size: 18px;
+}
+.roomCard table tr {
+  vertical-align: baseline;
+}
+.roomCard table tr td:nth-child(1) {
+    text-align: center;
+  }
+.roomCard table tr td:nth-child(3) {
+    width: 70%;
+    text-align: start;
+  }
+.roomCard table tr td:nth-child(even) {
+    font-weight: bold;
+  }
+.cardverified{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 4px 16px;
+    background-color: rgb(69, 148, 69);
+    color: whitesmoke;
+    border-radius: 99px;
+}
+
+.cardRequired{
+    color: indigo;
+    padding: 10px;
+    font-size: 22px;
+}
+.cardRequired div{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.cardRequired div img{
+    width: 350px;
+    margin: auto;
+    padding: 10px;
+    height: 250px;
+}
+
+.flatdetail h4{
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+}
+
+.addFlat {
+    background: linear-gradient(to left,#b588bb  0%, #c59099 100%);
+    position: absolute;
+    top:100px;
+    right: 10px;
+    color: whitesmoke;
+    padding: 4px 16px;
+    border-radius: 99px;
+}
+.controlKey{
+    display: flex;
+    width: 100%;
+    padding: 10px 30% ;
+    font-size: 26px;
+    justify-content: center;
+}
+.controlKey button {
+    margin: 0px 10px;
+}
+
+@media (max-width: 700px){
+    .FlatContainer{
+        padding: 70px 3%;
+    }
+    .flatImage{
+        width: 5% !important;
+    }
+    .flatdetail{
+        width: 95% !important;
+    }
+    .cardverified{
+        top: -10px;
+        right: -10px;
+        padding: 6px 10px;
+    }
+    .cardverified span{
+        display: none;
+    }
+    .cardRequired{
+        font-size: 16px;
+    }
+    .addFlat{
+        position: unset !important;
+        width: 40%;
+        margin: 0px 30%;
+    }
+    .cardRequired div img{
+        max-width: 250px;
+        max-height: 250px;
+    }
+    .roomCard table{
+        width: 80%;
+        display: table;
+        font-size: 14px;
+    }
+}

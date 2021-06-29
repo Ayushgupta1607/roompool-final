@@ -1,0 +1,12 @@
+.ComingSoon{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.ComingSoon > h1{
+    font-size:72px !important;
+    font-family: monospace;
+    color: #5846f9;
+}
